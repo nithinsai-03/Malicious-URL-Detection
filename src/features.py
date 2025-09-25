@@ -126,7 +126,7 @@ def heuristic_score(url: str):
 def classify_url(url: str):
     """Classify a URL and return details."""
     score, reasons = heuristic_score(url)
-    label = "🔴 Malicious" if score >= 3 else "🟢 Benign"
+    label = "🔴 Malicious" if score >= 3 else "🟢 safe"
 
     attack_types = []
     prevention_tips = []
